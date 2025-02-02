@@ -12,24 +12,25 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun CardDetails (
-               modifier: Modifier,
-               title: String,
-               description: String,
-               onClick: () -> Unit,
-               buttonLabel: String) {
+fun CardDetails(
+    modifier: Modifier,
+    title: String,
+    description: String,
+    onClick: () -> Unit,
+    buttonLabel: String
+) {
     Card(modifier = modifier) {
 
         Column {
-            Row (modifier = Modifier.padding(5.dp)){
+            Row(modifier = Modifier.padding(5.dp)) {
                 Text(title)
             }
 
-            Row (modifier = Modifier.padding(10.dp)){
+            Row(modifier = Modifier.padding(10.dp)) {
                 Text(description)
             }
 
-            Row (modifier = Modifier.padding(10.dp)){
+            Row(modifier = Modifier.padding(10.dp)) {
                 Button(onClick = onClick, modifier = Modifier.fillMaxWidth()) {
                     Text(buttonLabel)
                 }

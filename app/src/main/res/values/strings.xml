@@ -2,5 +2,5 @@
     <string name="app_name">boilerplate-jetpack-compose-android-sdk</string>
     <string name="title">This is a boiler plate for the Atomic Jetpack compose SDK</string>
     <string name="description">This guide illustrates the process of effectively blending and applying the ComposableStreamContainer component.</string>
-    <string name="button_label">Click me!!</string>
+    <string name="button_label">Navigate!!</string>
 </resources>

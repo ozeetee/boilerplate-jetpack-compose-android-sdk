@@ -1,4 +1,4 @@
-package io.atomic.sdk
+package io.atomic.sdk.screens.inbox
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
@@ -7,9 +7,12 @@ import com.atomic.actioncards.sdk.AACSDK
 import com.atomic.actioncards.sdk.AACStreamContainer
 import com.atomic.actioncards.sdk.PresentationMode
 import com.atomic.actioncards.sdk.VotingOption
+import dagger.hilt.android.lifecycle.HiltViewModel
 import java.util.EnumSet
+import javax.inject.Inject
 
-class BoilerPlateViewModel : ViewModel() {
+@HiltViewModel
+class InboxViewModel @Inject constructor() : ViewModel() {
 
     var streamContainer: AACStreamContainer? = null
 
@@ -17,7 +20,7 @@ class BoilerPlateViewModel : ViewModel() {
         initContainer()
     }
 
-    fun initContainer() {
+    private fun initContainer() {
         if (streamContainer != null) {
             return
         }
