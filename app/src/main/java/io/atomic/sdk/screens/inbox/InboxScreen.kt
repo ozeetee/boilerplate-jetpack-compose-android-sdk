@@ -47,7 +47,7 @@ fun InboxRoute(navController: NavHostController) {
                         modifier = Modifier.padding(50.dp),
                         title = stringResource(R.string.title),
                         description = stringResource(R.string.description),
-                        onClick = { navController.navigate("dummy") },
+                        onClick = { navController.navigate("multiCards") },
                         buttonLabel = stringResource(R.string.button_label)
                     )
                 }
